@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <com.sjzc.fh.pedometer.widget.BaseTitleLayout
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_title_height"
+        android:background="@color/colorAccent"
+        app:titleTextColor="@color/color_white"
+        app:titleRightImg1="@mipmap/icon_submit"
+        app:titleTextSize = "18sp"
+        app:titleCenterText="发表"
+        app:titleLeftText=""/>
+
+
+    <com.sjzc.fh.pedometer.widget.AnFQNumEditText
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlelayout"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_com_edittext"
+        android:gravity="top|left"
+        android:padding="10dp" />
+
+
+    <com.sjzc.fh.pedometer.widget.MyGridView
+        android:id="@+id/gridview_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext"
+        android:cacheColorHint="#00000000"
+        android:layout_margin="10dp"
+        android:horizontalSpacing="20dp"
+        android:listSelector="#00000000"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="20dp" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>
