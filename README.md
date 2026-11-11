@@ -14,7 +14,7 @@ Mars Sport is an Android pedometer and social fitness app built around the idea 
 - **Push notifications.** Receive announcements and push messages, with an in-app message list.
 - **Weather.** Current conditions and a multi-day forecast for your location.
 - **Music.** A built-in local music player that keeps playing in the background with a notification control.
-- **Account and settings.** Register, log in, reset your password, edit your profile, adjust light-sensor based screen brightness, and send feedback.
+- **Account and settings.** Register, log in, reset your password, edit your profile, tune motion and light sensitivity, and send feedback.
 
 ## Tech stack
 
@@ -31,7 +31,7 @@ Mars Sport is an Android pedometer and social fitness app built around the idea 
 | Images | Glide 3, TakePhoto (camera and gallery picker), NineGridImageView, Banner, EasyBlur |
 | UI | BaseRecyclerViewAdapterHelper, EasyRecyclerView, Lottie, FloatingActionButton (Clans), SuperTextView, SwipeCardsView, NineOldAndroids, plus custom views (charts, progress wheel, arc menu, falling-snow animation) |
 | Sensors | Step counter, step detector, accelerometer, orientation and light sensors |
-| Voice | Recording and Text2Speech libraries for voice messages |
+| Voice | Recording library (`RecordVoiceButton`) for voice messages |
 | Architecture helpers | ButterKnife (view binding), EventBus, AndPermission (runtime permissions), HelloDaemon (keep-alive background service) |
 | Debugging | Stetho, LeakCanary, a custom crash handler, Log4j |
 
